@@ -1,0 +1,134 @@
+.skills-section {
+  padding: 5rem 0;
+  background-color: hsl(220 35% 8% / 0.3);
+}
+
+.skills-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .skills-heading {
+    font-size: 3rem;
+  }
+}
+
+.skills-heading-accent {
+  background: linear-gradient(90deg, hsl(200, 100%, 50%) 0%, hsl(195, 100%, 60%) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-divider {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: hsl(200 100% 50%);
+  margin: 0 auto 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skills-card {
+  background: linear-gradient(135deg, hsl(220, 35%, 8%) 0%, hsl(220, 30%, 12%) 100%);
+  border: 1px solid hsl(200 100% 50% / 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.skills-card:hover {
+  border-color: hsl(200 100% 50% / 0.4);
+  transform: scale(1.05);
+}
+
+.skills-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.skills-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.skills-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.skills-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.skills-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.skills-card-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: hsl(200 100% 50% / 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-item {
+  padding: 0.25rem 0.75rem;
+  background-color: hsl(220 30% 15% / 0.5);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: 1px solid hsl(200 100% 50% / 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

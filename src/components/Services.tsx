@@ -1,5 +1,5 @@
 import { Smartphone, Code, Palette } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import "./Services.css";
 
 const Services = () => {
   const services = [
@@ -21,34 +21,28 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          My <span className="text-gradient">Services</span>
+    <section id="services" className="services-section">
+      <div className="services-container">
+        <h2 className="services-heading">
+          My <span className="services-heading-accent">Services</span>
         </h2>
-        <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+        <div className="services-divider" />
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="services-grid">
           {services.map((service, index) => (
-            <Card
-              key={service.title}
-              className="card-gradient border-primary/20 hover:border-primary/40 transition-all hover:scale-105 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-6">
-                <div className="space-y-4">
-                  <div className="w-14 h-14 rounded-lg bg-primary/20 flex items-center justify-center glow-primary">
-                    <service.icon className="h-7 w-7 text-primary" />
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold">{service.title}</h3>
-                  
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+            <div key={service.title} className="services-card">
+              <div className="services-card-content">
+                <div className="services-card-icon">
+                  <service.icon className="h-7 w-7" />
                 </div>
-              </CardContent>
-            </Card>
+                
+                <h3 className="services-card-title">{service.title}</h3>
+                
+                <p className="services-card-description">
+                  {service.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

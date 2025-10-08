@@ -1,5 +1,5 @@
 import { Code2, Database, Server, Layers } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import "./Skills.css";
 
 const Skills = () => {
   const skillCategories = [
@@ -30,41 +30,32 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-card/30">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          Skills & <span className="text-gradient">Expertise</span>
+    <section id="skills" className="skills-section">
+      <div className="skills-container">
+        <h2 className="skills-heading">
+          Skills & <span className="skills-heading-accent">Expertise</span>
         </h2>
-        <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+        <div className="skills-divider" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="skills-grid">
           {skillCategories.map((category, index) => (
-            <Card
-              key={category.title}
-              className="card-gradient border-primary/20 hover:border-primary/40 transition-all hover:scale-105 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-6">
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
-                    <category.icon className={`h-8 w-8 ${category.color}`} />
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold">{category.title}</h3>
-                  
-                  <div className="space-y-2">
-                    {category.skills.map((skill) => (
-                      <div
-                        key={skill}
-                        className="px-3 py-1 bg-muted/50 rounded-full text-sm border border-primary/20"
-                      >
-                        {skill}
-                      </div>
-                    ))}
-                  </div>
+            <div key={category.title} className="skills-card">
+              <div className="skills-card-content">
+                <div className="skills-card-icon">
+                  <category.icon className={`h-8 w-8`} style={{ color: category.color }} />
                 </div>
-              </CardContent>
-            </Card>
+                
+                <h3 className="skills-card-title">{category.title}</h3>
+                
+                <div className="skills-list">
+                  {category.skills.map((skill) => (
+                    <div key={skill} className="skills-item">
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

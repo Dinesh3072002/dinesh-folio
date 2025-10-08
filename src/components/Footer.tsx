@@ -1,16 +1,17 @@
 import { Heart } from "lucide-react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-border/50">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-content">
+          <p className="footer-text">
             © {new Date().getFullYear()} Dinesh S. All rights reserved.
           </p>
           
-          <p className="text-muted-foreground text-sm flex items-center gap-2">
-            Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> using React & Tailwind CSS
+          <p className="footer-made-with">
+            Built with <Heart className="footer-heart" /> using React & CSS
           </p>
         </div>
       </div>

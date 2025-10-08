@@ -1,0 +1,220 @@
+.contact-section {
+  padding: 5rem 0;
+}
+
+.contact-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-heading {
+    font-size: 3rem;
+  }
+}
+
+.contact-heading-accent {
+  background: linear-gradient(90deg, hsl(200, 100%, 50%) 0%, hsl(195, 100%, 60%) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-divider {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: hsl(200 100% 50%);
+  margin: 0 auto 3rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: slideIn 0.6s ease-out;
+}
+
+.contact-info-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-info-header p {
+  color: hsl(215 20% 65%);
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-info-card {
+  background: linear-gradient(135deg, hsl(220, 35%, 8%) 0%, hsl(220, 30%, 12%) 100%);
+  border: 1px solid hsl(200 100% 50% / 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-info-card:hover {
+  border-color: hsl(200 100% 50% / 0.4);
+}
+
+.contact-info-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: hsl(200 100% 50% / 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  color: hsl(200 100% 50%);
+}
+
+.contact-info-link:hover .contact-info-icon {
+  background-color: hsl(200 100% 50% / 0.3);
+}
+
+.contact-info-text p:first-child {
+  font-size: 0.875rem;
+  color: hsl(215 20% 65%);
+}
+
+.contact-info-text p:last-child {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-info-link:hover .contact-info-text p:last-child {
+  color: hsl(200 100% 50%);
+}
+
+.contact-form-card {
+  background: linear-gradient(135deg, hsl(220, 35%, 8%) 0%, hsl(220, 30%, 12%) 100%);
+  border: 1px solid hsl(200 100% 50% / 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: hsl(220 30% 15% / 0.5);
+  border: 1px solid hsl(200 100% 50% / 0.2);
+  border-radius: 0.75rem;
+  color: hsl(210 40% 98%);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+  outline: none;
+  border-color: hsl(200 100% 50%);
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+  color: hsl(215 20% 65%);
+}
+
+.contact-form-group textarea {
+  resize: none;
+}
+
+.contact-submit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: hsl(200 100% 50%);
+  color: hsl(220 40% 5%);
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px hsl(200 100% 50% / 0.3);
+}
+
+.contact-submit-button:hover:not(:disabled) {
+  background-color: hsl(200 100% 45%);
+}
+
+.contact-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

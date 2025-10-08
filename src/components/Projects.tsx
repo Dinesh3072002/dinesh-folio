@@ -1,6 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import "./Projects.css";
 
 const Projects = () => {
   const projects = [
@@ -21,67 +20,49 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-card/30">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          Featured <span className="text-gradient">Projects</span>
+    <section id="projects" className="projects-section">
+      <div className="projects-container">
+        <h2 className="projects-heading">
+          Featured <span className="projects-heading-accent">Projects</span>
         </h2>
-        <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+        <div className="projects-divider" />
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="projects-grid">
           {projects.map((project, index) => (
-            <Card
-              key={project.title}
-              className="card-gradient border-primary/20 hover:border-primary/40 transition-all overflow-hidden group animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="relative overflow-hidden">
+            <div key={project.title} className="projects-card">
+              <div className="projects-image-container">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="projects-image"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
+                <div className="projects-image-overlay" />
               </div>
               
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+              <div className="projects-card-body">
+                <h3 className="projects-card-title">{project.title}</h3>
+                <p className="projects-card-description">{project.description}</p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="projects-tech-list">
                   {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm border border-primary/30"
-                    >
+                    <span key={tech} className="projects-tech-item">
                       {tech}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-primary/30 hover:bg-primary/10"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-primary/30 hover:bg-primary/10"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
+                <div className="projects-actions">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="projects-button">
+                    <Github className="h-4 w-4" />
+                    Code
+                  </a>
+                  <a href="#" className="projects-button">
+                    <ExternalLink className="h-4 w-4" />
                     Live Demo
-                  </Button>
+                  </a>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
