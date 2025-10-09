@@ -9,10 +9,6 @@ const Footer = () => {
           <p className="footer-text">
             © {new Date().getFullYear()} Dinesh S. All rights reserved.
           </p>
-          
-          <p className="footer-made-with">
-            Built with <Heart className="footer-heart" /> using React & CSS
-          </p>
         </div>
       </div>
     </footer>

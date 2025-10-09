@@ -77,7 +77,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  
 }
+
 
 .hero-primary-button {
   display: inline-flex;
@@ -184,21 +186,25 @@
 .hero-tech-icon:nth-child(2) {
   top: 0%;
   left: -2rem;
+  color: blue;
 }
 
 .hero-tech-icon:nth-child(3) {
   top: 25%;
   right: -2rem;
+  color: yellow;
 }
 
 .hero-tech-icon:nth-child(4) {
   top: 50%;
   left: -2rem;
+  color: brown;
 }
 
 .hero-tech-icon:nth-child(5) {
   top: 75%;
   right: -2rem;
+  color: blueviolet;
 }
 
 @keyframes slideIn {

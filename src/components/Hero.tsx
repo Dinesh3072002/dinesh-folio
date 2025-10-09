@@ -27,8 +27,15 @@ const Hero = () => {
               Specialized in building performance-driven applications.
             </p>
 
-            <div className="hero-actions">
-              <a href="#" className="hero-primary-button">
+           <div className="hero-actions">
+              {/* ✅ Updated to download PDF */}
+              
+              <a
+                href="/Dinesh_Resume.pdf"
+                download="Dinesh_Resume.pdf"
+                className="hero-primary-button"
+                // className="rounded-2xl border-2 border-dashed border-black bg-white px-3 py-1 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[2px_2px_0px_white] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+              >
                 <Download className="h-5 w-5" />
                 Download Resume
               </a>
@@ -53,7 +60,7 @@ const Hero = () => {
               {/* Main Profile Image */}
               <div className="hero-image">
                 <img
-                  src={profileImage}
+                  src={"img1.jpg"}
                   alt="Dinesh S - Full Stack Developer"
                 />
               </div>
