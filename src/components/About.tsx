@@ -49,7 +49,7 @@ const About = () => {
                     <Briefcase className="h-6 w-6" />
                   </div>
                   <div className="about-card-body">
-                    <h3 className="about-card-title">Intership</h3>
+                    <h3 className="about-card-title">Experience</h3>
                     
                     <div className="about-card-items">
                       <p className="about-card-item-title">Full-Stack Developer Intern</p>
