@@ -9,6 +9,7 @@ const Projects = () => {
       tech: ["React", "CSS", "JavaScript" ],
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop",
       github: "https://github.com/Dinesh3072002/BootStrap_Responsive_Website",
+      demo: "https://dinesh-buiders.netlify.app/"
     },
     {
       title: "Dress Website",
@@ -16,6 +17,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "Bootstrap"],
       image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop",
       github: "https://github.com/Dinesh3072002/Responsive-Website-/tree/main/Dress%20Website",
+      demo: "https://dinesh-dresswebsite.netlify.app/"
     },
     {
       title: "Stopwatch",
@@ -23,6 +25,7 @@ const Projects = () => {
       tech: ["React", "Css"],
       image: "stopwatch.jpeg",
       github: "https://github.com/Dinesh3072002/React_stopwatch.git",
+      demo: "https://dinesh-stopwatch.netlify.app/"
     },
     {
       title: "Calculator",
@@ -30,6 +33,7 @@ const Projects = () => {
       tech: ["React", "Css"],
       image: "calculator.png",
       github: "https://github.com/Dinesh3072002/React_calculator.git",
+      demo: "https://dineshcalculator.netlify.app/"
     },
     {
       title: "Todo",
@@ -37,6 +41,8 @@ const Projects = () => {
       tech: ["React", "Css"],
       image: "todo-image.png",
       github: "https://github.com/Dinesh3072002/React_todo.git",
+      demo: "http://dinesh-todo.netlify.app"
+
     },
   ];
 
@@ -77,7 +83,7 @@ const Projects = () => {
                     <Github className="h-4 w-4" />
                     Code
                   </a>
-                  <a href="#" className="projects-button">
+                  <a href={project.demo} target="_blank" className="projects-button">
                     <ExternalLink className="h-4 w-4" />
                     Live Demo
                   </a>

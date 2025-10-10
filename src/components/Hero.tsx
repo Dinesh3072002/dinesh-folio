@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import profileImage from "@/assets/dinesh-profile.jpg";
+import profileImage from "dinesh-folio/public/img1.jpg";
 import "./Hero.css";
 
 const Hero = () => {
