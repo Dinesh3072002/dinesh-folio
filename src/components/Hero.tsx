@@ -28,17 +28,16 @@ const Hero = () => {
             </p>
 
            <div className="hero-actions">
-              {/* ✅ Updated to download PDF */}
-              
-              <a
+             <a
                 href="/Dinesh_Resume.pdf"
                 download="Dinesh_Resume.pdf"
-                className="hero-primary-button"
-                // className="rounded-2xl border-2 border-dashed border-black bg-white px-3 py-1 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[2px_2px_0px_white] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                className="hero-primary-button flex items-center gap-2"
               >
-                <Download className="h-5 w-5" />
-                Download Resume
-              </a>
+                <Download className="h-5 w-5" aria-hidden="true" />
+                <span>Download Resume</span>
+             </a>
+
+
 
               <div className="hero-social-links">
                 <a href="https://github.com/Dinesh3072002" target="_blank" rel="noopener noreferrer" className="hero-social-button">

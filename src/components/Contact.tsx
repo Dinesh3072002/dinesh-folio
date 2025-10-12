@@ -61,7 +61,7 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       value: "Dinesh3072002",
-      href: "https://github.com/Dinesh3072002/Responsive-Website",
+      href: "https://github.com/Dinesh3072002",
     },
   ];
 

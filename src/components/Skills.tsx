@@ -24,7 +24,7 @@ const Skills = () => {
     {
       icon: Layers,
       title: "Tools",
-      skills: ["Git", "GitHub", "VS Code"],
+      skills: ["Git", "GitHub", "VS Code" , "Netlify"],
       color: "text-cyan-400",
     },
   ];

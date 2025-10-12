@@ -42,14 +42,14 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Experience */}
+              {/* Internship */}
               <div className="about-card">
                 <div className="about-card-content">
                   <div className="about-card-icon">
                     <Briefcase className="h-6 w-6" />
                   </div>
                   <div className="about-card-body">
-                    <h3 className="about-card-title">Experience</h3>
+                    <h3 className="about-card-title">Internship</h3>
                     
                     <div className="about-card-items">
                       <p className="about-card-item-title">Full-Stack Developer Intern</p>

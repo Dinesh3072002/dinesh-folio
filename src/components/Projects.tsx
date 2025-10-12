@@ -6,15 +6,15 @@ const Projects = () => {
     {
       title: "Building Website",
       description: "A comprehensive website for a construction company featuring project showcases, service listings, and contact forms. Built with React and responsive design principles.",
-      tech: ["React", "CSS", "JavaScript" ],
+      tech: ["Html", "CSS", "Bootstrap" ],
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop",
       github: "https://github.com/Dinesh3072002/BootStrap_Responsive_Website",
-      demo: "https://dinesh-buiders.netlify.app/"
+      demo: "https://dinesh-builders.netlify.app/"
     },
     {
       title: "Dress Website",
       description: "An elegant e-commerce platform for fashion retail with product catalogs, shopping cart functionality, and modern UI/UX design.",
-      tech: ["React", "Node.js", "Bootstrap"],
+      tech: ["Html", "CSS", "Javascript" ],
       image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop",
       github: "https://github.com/Dinesh3072002/Responsive-Website-/tree/main/Dress%20Website",
       demo: "https://dinesh-dresswebsite.netlify.app/"
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: "Stopwatch",
       description: "An elegant e-commerce platform for fashion retail with product catalogs, shopping cart functionality, and modern UI/UX design.",
-      tech: ["React", "Css"],
+      tech: ["Html", "Css", "JavaScript" ,"React"],
       image: "stopwatch.jpeg",
       github: "https://github.com/Dinesh3072002/React_stopwatch.git",
       demo: "https://dinesh-stopwatch.netlify.app/"
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       title: "Calculator",
       description: "An elegant e-commerce platform for fashion retail with product catalogs, shopping cart functionality, and modern UI/UX design.",
-      tech: ["React", "Css"],
+      tech: ["Html", "Css", "JavaScript" ,"React"],
       image: "calculator.png",
       github: "https://github.com/Dinesh3072002/React_calculator.git",
       demo: "https://dineshcalculator.netlify.app/"
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "Todo",
       description: "An elegant e-commerce platform for fashion retail with product catalogs, shopping cart functionality, and modern UI/UX design.",
-      tech: ["React", "Css"],
+      tech: ["Html", "Css", "JavaScript" ,"React"],
       image: "todo-image.png",
       github: "https://github.com/Dinesh3072002/React_todo.git",
       demo: "http://dinesh-todo.netlify.app"
