@@ -29,8 +29,8 @@ const Hero = () => {
 
            <div className="hero-actions">
              <a
-                href="/Dinesh_Resume.pdf"
-                download="Dinesh_Resume.pdf"
+                href="dinesh-folio/public/Dinesh Resume.pdf"
+                download="Dinesh Resume.pdf"
                 className="hero-primary-button flex items-center gap-2"
               >
                 <Download className="h-5 w-5" aria-hidden="true" />
