@@ -4,10 +4,10 @@ import "./Hero.css";
 
 const Hero = () => {
   const techIcons = [
-    { name: "React", color: "text-[#61DAFB]", delay: "0s" },
-    { name: "Node", color: "text-[#68A063]", delay: "0.5s" },
+    { name: "React JS", color: "text-[#61DAFB]", delay: "0s" },
+    { name: "Node JS", color: "text-[#68A063]", delay: "0.5s" },
     { name: "MongoDB", color: "text-[#4DB33D]", delay: "1s" },
-    { name: "JS", color: "text-[#F7DF1E]", delay: "1.5s" },
+    { name: "Express JS", color: "text-[#F7DF1E]", delay: "1.5s" },
   ];
 
   return (
@@ -36,8 +36,6 @@ const Hero = () => {
                 <Download className="h-5 w-5" aria-hidden="true" />
                 <span>Download Resume</span>
              </a>
-
-
 
               <div className="hero-social-links">
                 <a href="https://github.com/Dinesh3072002" target="_blank" rel="noopener noreferrer" className="hero-social-button">
